@@ -24,7 +24,8 @@
 7. 将 Payload 文件压缩成 ipa 安装包
 
 
-clang：	
+clang：
+
 	-fmodules      自动国找到需要的系统库
 	
         -fobjc-arc     由ARC编译
