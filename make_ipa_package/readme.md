@@ -2,7 +2,7 @@
 
 写完iOS项目后，自己用脚本生成安ipa安装包
 
-1. 使用 clang 编译所有的 Objective-C 和  C/C++ 原文件   
+1. 使用 clang 编译所有的 Objective-C 和  C/C++ 源文件   
    生成的文件放到 Payload/appname.app 文件里
 
 2. 使用　ibtool　编译 .storyboard 文件为 .storyboardc    
