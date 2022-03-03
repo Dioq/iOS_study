@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecViewController.h"
 
 @interface ViewController ()
 
@@ -27,5 +28,10 @@
     [self.view addSubview:label1];
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"%d",__LINE__);
+    SecViewController *sec = [[SecViewController alloc] initWithNibName:@"SecViewController" bundle:nil];
+    [self.navigationController pushViewController:sec animated:YES];
+}
 
 @end

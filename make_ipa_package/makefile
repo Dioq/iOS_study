@@ -45,6 +45,14 @@ compile:
 			-mios-version-min=${version} \
 			-c $(ResourceDirecrory)/ViewController.m \
 			-o $(TmpBuildFile)/ViewController.o
+	
+	@clang \
+			-fmodules -fobjc-arc \
+			-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk \
+			 -arch $(Architecture) \
+			-mios-version-min=${version} \
+			-c $(ResourceDirecrory)/SecViewController.m \
+			-o $(TmpBuildFile)/SecViewController.o
 
 link:
 	#2、Link Object file
@@ -53,7 +61,7 @@ link:
 			-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk \
 			-arch $(Architecture) \
 			-mios-version-min=${version} \
-			$(TmpBuildFile)/main.o $(TmpBuildFile)/AppDelegate.o $(TmpBuildFile)/ViewController.o \
+			$(TmpBuildFile)/main.o $(TmpBuildFile)/AppDelegate.o $(TmpBuildFile)/ViewController.o $(TmpBuildFile)/SecViewController.o \
 			-o $(TmpBuildFile)/$(AppName)
 	
 	@rm $(TmpBuildFile)/AppDelegate.o $(TmpBuildFile)/main.o $(TmpBuildFile)/ViewController.o
@@ -66,7 +74,7 @@ storyboard:
 	
 	@ibtool --compilation-directory $(TmpBuildFile)/$(ConstIBFile) $(ResourceDirecrory)/$(ConstIBFile)/LaunchScreen.storyboard
 
-
+	@ibtool --errors --warnings --output-format human-readable-text --compile $(TmpBuildFile)/SecViewController.nib $(ResourceDirecrory)/SecViewController.xib
 plist:
 	#4、plist : App ID、name、version ...
 	
