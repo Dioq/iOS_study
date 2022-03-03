@@ -25,9 +25,9 @@
 
 
 clang：	
-	-fmodules      自动国找到需要的系统库	
-        -fobjc-arc     由ARC编译	
-	-isysroot	指定系统SDK路径	
+	-fmodules      自动国找到需要的系统库			
+        -fobjc-arc     由ARC编译			
+	-isysroot	指定系统SDK路径		
 
 注：我在 makefile 里的步骤分的更细一些，由于我测试的项目没有使用 Main.storyboard 所以 在构建　Info.plist 时就没设置这个选项．
 当你做完这些后你会发现 其实 Xcode 生成 ipa 包的过程很简单
