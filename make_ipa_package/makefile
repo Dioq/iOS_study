@@ -69,12 +69,10 @@ link:
 storyboard:
 	#3、编译storyboard文件
 	@mkdir $(TmpBuildFile)/$(ConstIBFile)
-	
 	@#@ibtool --compilation-directory $(TmpBuildFile)/$(ConstIBFile) $(ResourceDirecrory)/$(ConstIBFile)/Main.storyboard
-	
 	@ibtool --compilation-directory $(TmpBuildFile)/$(ConstIBFile) $(ResourceDirecrory)/$(ConstIBFile)/LaunchScreen.storyboard
-
 	@ibtool --errors --warnings --output-format human-readable-text --compile $(TmpBuildFile)/SecViewController.nib $(ResourceDirecrory)/SecViewController.xib
+
 plist:
 	#4、plist : App ID、name、version ...
 	
