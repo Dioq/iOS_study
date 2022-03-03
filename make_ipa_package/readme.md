@@ -2,23 +2,23 @@
 
 写完iOS项目后，自己用脚本生成安ipa安装包
 
-1. 使用 clang 编译所有的 Objective-C 和  C/C++ 原文件
+1. 使用 clang 编译所有的 Objective-C 和  C/C++ 原文件   
    生成的文件放到 Payload/appname.app 文件里
 
-2. 使用　ibtool　编译 .storyboard 文件为 .storyboardc
+2. 使用　ibtool　编译 .storyboard 文件为 .storyboardc    
    生成的文件放到 Payload/appname.app/Base.lproj
    
-3. 使用　ibtool　编译 .xib 文件为 .nib
+3. 使用　ibtool　编译 .xib 文件为 .nib    
    生成的文件放到 Payload/appname.app
 
-4. 自己构造Info.plist文件，并配置项目的相关信息
-   Info.plist 在 Payload/appname.app 文件里
-   使用 write 往 Info.plist 里写数据
+4. 自己构造Info.plist文件，并配置项目的相关信息      
+   Info.plist 在 Payload/appname.app 文件里      
+   使用 write 往 Info.plist 里写数据    
 
-5. 将项目里的所有图片资源复制到 Payload 里的 appname.app 文件里
+5. 将项目里的所有图片资源复制到 Payload 里的 appname.app 文件里    
    不需要顺序直接往里面放就可以了
 
-6. 使用 codesign 签名 第一步生成的可执行文件或库文件
+6. 使用 codesign 签名 第一步生成的可执行文件或库文件      
    这里需要用到描述文件　embedded.mobileprovision（可以用苹果开发者账号 登录苹果官网下，当然也有其他方式）
    
 7. 将 Payload 文件压缩成 ipa 安装包
