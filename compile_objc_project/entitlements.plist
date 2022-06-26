@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>38D3676P2T.cn.jobs8</string>
+	<key>aps-environment</key>
+	<string>production</string>
+	<key>com.apple.developer.ClassKit-environment</key>
+	<array>
+		<string>production</string>
+	</array>
+	<key>com.apple.developer.associated-domains</key>
+	<string>*</string>
+	<key>com.apple.developer.authentication-services.autofill-credential-provider</key>
+	<true/>
+	<key>com.apple.developer.default-data-protection</key>
+	<string>NSFileProtectionComplete</string>
+	<key>com.apple.developer.devicecheck.appattest-environment</key>
+	<array>
+		<string>development</string>
+		<string>production</string>
+	</array>
+	<key>com.apple.developer.in-app-payments</key>
+	<array/>
+	<key>com.apple.developer.networking.wifi-info</key>
+	<true/>
+	<key>com.apple.developer.team-identifier</key>
+	<string>38D3676P2T</string>
+	<key>com.apple.developer.usernotifications.communication</key>
+	<true/>
+	<key>com.apple.security.application-groups</key>
+	<array/>
+	<key>get-task-allow</key>
+	<false/>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>38D3676P2T.*</string>
+		<string>com.apple.token</string>
+	</array>
+</dict>
+</plist>

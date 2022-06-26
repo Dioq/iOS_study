@@ -1,13 +1,13 @@
 CurrentDir = "$(shell pwd)"
 ResourceDirecrory = ProjectFile
-AppName = Makeipa
+AppName = Test
 TmpBuildFile = $(AppName).app
 ConstIBFile = Base.lproj
 Architecture = arm64
-CertificateName = "Apple Development: zhendong2011@live.cn (W754JF95X9)"
+CertificateName = "Apple Distribution: Zhendong Li (38D3676P2T)"
 
 version = 9.0
-BundleIdentifier = com.my.${AppName}
+BundleIdentifier = cn.jobs8 #com.my.${AppName}
 
 compile:
 	#1、创建BuildDemo.app文件
