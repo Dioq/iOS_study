@@ -184,7 +184,7 @@ make_dsym() {
     dsymutil -arch ${Architecture} $CurrentDir/Payload/"${AppName}.app"/${AppName} -o "${AppName}.app.dSYM"
 }
 
-make_dsym
+# make_dsym
 
 # 签名 生成的 Mach-O 可执行文件
 sign_machO() {
