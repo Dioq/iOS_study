@@ -30,7 +30,7 @@
     nibView.backgroundColor = [UIColor yellowColor];
     nibView.book = book;
     
-    NSInteger time = 0.3;
+    NSInteger time = 1;
     dispatch_queue_t mainQueue = dispatch_get_main_queue();
     //在主线程延迟执行
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, time * NSEC_PER_SEC), mainQueue, ^{
