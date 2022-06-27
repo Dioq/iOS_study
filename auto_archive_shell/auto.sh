@@ -203,10 +203,10 @@ make_installer_package
 
 # 清理工作现场
 clean_workspace() {
-    rm -rf $CurrentDir/"${AppName}.app.dSYM"
-    rm -rf $CurrentDir/entitlements.plist
-    rm -rf $CurrentDir/profile.plist
-    rm -rf $CurrentDir/Payload
+    rm -rf ./"${AppName}.app.dSYM"
+    rm -rf ./entitlements.plist
+    rm -rf ./profile.plist
+    rm -rf ./Payload
 }
 
 clean_workspace
