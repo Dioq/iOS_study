@@ -57,7 +57,13 @@ copy_projectFile_to_Payload(){
                 # xxx.lproj 是 storyboard 存放文件需要特别处理
                 if test "${file##*.}" = "lproj"
                 then
-                        cp -r $1"/"$file $CurrentDir/Payload/"${AppName}.app"
+                        # 如果 Payload 里还没有 这个 本地化文件 就创建
+                        if [ ! -d $CurrentDir/Payload/"${AppName}.app"/$file ]
+                        then
+                            mkdir $CurrentDir/Payload/"${AppName}.app"/$file
+                        fi
+                        # 将所有不同语言的 Localizatin 相关文件合并到一起
+                        cp -r $1"/"$file/* $CurrentDir/Payload/"${AppName}.app"/$file
                 else    # 其他文件则继续递归
                         copy_projectFile_to_Payload $1"/"$file
                 fi
@@ -131,11 +137,6 @@ clear_Payload_dir(){
         then
             if [[ $file != '.' && $file != '..' ]]
             then
-                # xxx.lproj 是 storyboard 存放文件需要特别处理
-                if test "${file##*.}" = "lproj"
-                then
-                    rm -rf $1"/"$file"/*.strings"
-                fi
                 clear_Payload_dir $1"/"$file
             fi
         else    # 如果是 file

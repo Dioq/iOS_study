@@ -15,11 +15,11 @@
 		3AE5DFC928682189003347F0 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5DFC728682189003347F0 /* SecViewController.m */; };
 		3AE5DFCA28682189003347F0 /* SecViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5DFC828682189003347F0 /* SecViewController.xib */; };
 		3AE5DFD4286823C8003347F0 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5DFD3286823C8003347F0 /* ThirdViewController.m */; };
-		3AE5DFD6286823D6003347F0 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5DFD5286823D6003347F0 /* Third.storyboard */; };
 		3AE5DFD92868257E003347F0 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5DFD82868257E003347F0 /* image1.png */; };
 		3AE5DFE3286826B7003347F0 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5DFE2286826B7003347F0 /* BookModel.m */; };
 		3AE5DFE828682728003347F0 /* MyNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5DFE528682728003347F0 /* MyNibView.m */; };
 		3AE5DFE928682728003347F0 /* MyNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5DFE628682728003347F0 /* MyNibView.xib */; };
+		3AE5E04B286A0566003347F0 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5E04D286A0566003347F0 /* Third.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,13 +37,19 @@
 		3AE5DFC828682189003347F0 /* SecViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecViewController.xib; sourceTree = "<group>"; };
 		3AE5DFD2286823C8003347F0 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		3AE5DFD3286823C8003347F0 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		3AE5DFD5286823D6003347F0 /* Third.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 		3AE5DFD82868257E003347F0 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		3AE5DFE1286826B7003347F0 /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
 		3AE5DFE2286826B7003347F0 /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
 		3AE5DFE528682728003347F0 /* MyNibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNibView.m; sourceTree = "<group>"; };
 		3AE5DFE628682728003347F0 /* MyNibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyNibView.xib; sourceTree = "<group>"; };
 		3AE5DFE728682728003347F0 /* MyNibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNibView.h; sourceTree = "<group>"; };
+		3AE5E047286A04EA003347F0 /* en-AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-AU"; path = "en-AU.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3AE5E048286A052C003347F0 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3AE5E04A286A0537003347F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3AE5E04C286A0566003347F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Third.storyboard; sourceTree = "<group>"; };
+		3AE5E04F286A0569003347F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Third.strings; sourceTree = "<group>"; };
+		3AE5E051286A0569003347F0 /* en-AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-AU"; path = "en-AU.lproj/Third.strings"; sourceTree = "<group>"; };
+		3AE5E053286A056A003347F0 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Third.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,7 @@
 			children = (
 				3AE5DFD2286823C8003347F0 /* ThirdViewController.h */,
 				3AE5DFD3286823C8003347F0 /* ThirdViewController.m */,
-				3AE5DFD5286823D6003347F0 /* Third.storyboard */,
+				3AE5E04D286A0566003347F0 /* Third.storyboard */,
 			);
 			path = thirdpage;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"en-AU",
+				"en-GB",
 			);
 			mainGroup = 3A849BE628673F1500D5D9B3;
 			productRefGroup = 3A849BF028673F1500D5D9B3 /* Products */;
@@ -200,7 +208,7 @@
 				3A849C0228673F1700D5D9B3 /* LaunchScreen.storyboard in Resources */,
 				3AE5DFD92868257E003347F0 /* image1.png in Resources */,
 				3A849BFF28673F1700D5D9B3 /* Assets.xcassets in Resources */,
-				3AE5DFD6286823D6003347F0 /* Third.storyboard in Resources */,
+				3AE5E04B286A0566003347F0 /* Third.storyboard in Resources */,
 				3AE5DFE928682728003347F0 /* MyNibView.xib in Resources */,
 				3AE5DFCA28682189003347F0 /* SecViewController.xib in Resources */,
 			);
@@ -230,8 +238,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A849C0128673F1700D5D9B3 /* Base */,
+				3AE5E047286A04EA003347F0 /* en-AU */,
+				3AE5E048286A052C003347F0 /* en-GB */,
+				3AE5E04A286A0537003347F0 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3AE5E04D286A0566003347F0 /* Third.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AE5E04C286A0566003347F0 /* Base */,
+				3AE5E04F286A0569003347F0 /* en */,
+				3AE5E051286A0569003347F0 /* en-AU */,
+				3AE5E053286A056A003347F0 /* en-GB */,
+			);
+			name = Third.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
