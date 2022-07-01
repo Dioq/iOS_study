@@ -2,6 +2,8 @@
 
 # 待打包的工程目录
 ProjectDir=$1
+# 描述文件路径
+ProvisionPath=$2
 # 当前目录的绝对路径
 CurrentDir="$(pwd)" 
 
@@ -32,10 +34,12 @@ make_supporting_file(){
 	mkdir $CurrentDir/Payload/"${AppName}.app"
 	
     # 描述文件 放到 xx.app 文件里
-    cp $CurrentDir/embedded.mobileprovision $CurrentDir/Payload/"${AppName}.app"
+    #cp $CurrentDir/embedded.mobileprovision $CurrentDir/Payload/"${AppName}.app"
+    cp $ProvisionPath $CurrentDir/Payload/"${AppName}.app"
 
     # 生成签名时的权限文件
-    security cms -D -i $CurrentDir/embedded.mobileprovision > $CurrentDir/profile.plist
+    #security cms -D -i $CurrentDir/embedded.mobileprovision > $CurrentDir/profile.plist
+    security cms -D -i $ProvisionPath > $CurrentDir/profile.plist
     /usr/libexec/PlistBuddy -x -c 'Print :Entitlements' $CurrentDir/profile.plist > $CurrentDir/entitlements.plist
 
     # 获取 BundleID (Info.plist 里的 BundleID 要和描述文件里的一样)
